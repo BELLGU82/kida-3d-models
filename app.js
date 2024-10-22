@@ -15,12 +15,12 @@ let fairyZelda;
 let mixer;
 const loader = new GLTFLoader();
 
-const modelPath = './models/Fairy Zelda BOTW.glb';
+const modelPath = 'https://raw.githubusercontent.com/BELLGU82/kida-3d-models/main/Fairy%20Zelda%20BOTW.glb';
 
 loader.load(modelPath,
     function (gltf) {
         fairyZelda = gltf.scene;
-        fairyZelda.scale.set(1, 1, 1);  // הגדלנו את המודל
+        fairyZelda.scale.set(2, 2, 2);  // הגדלנו את המודל
         fairyZelda.position.set(0, 0, 0);
         scene.add(fairyZelda);
 
@@ -68,23 +68,23 @@ reRender3D();
 let arrPositionModel = [
     {
         id: 'banner',
-        position: {x: 0, y: -1, z: 0},
-        rotation: {x: 0, y: 1.5, z: 0}
+        position: {x: 0, y: 2, z: 0},
+        rotation: {x: 0, y: 3.5, z: 0}
     },
     {
         id: "intro",
-        position: { x: 1, y: -1, z: -5 },
+        position: { x: 1, y: 2, z: -5 },
         rotation: { x: 0.5, y: -0.5, z: 0 },
     },
     {
         id: "description",
-        position: { x: -1, y: -1, z: -5 },
-        rotation: { x: 0, y: 0.5, z: 0 },
+        position: { x: -10, y: 2, z: -5 },
+        rotation: { x: 1, y: 1.5, z: 0 },
     },
     {
         id: "contact",
-        position: { x: 0.8, y: -1, z: 0 },
-        rotation: { x: 0.3, y: -0.5, z: 0 },
+        position: { x: 0.8, y: 2, z: 0 },
+        rotation: { x: 0.3, y: -0.2, z: 0 },
     },
 ];
 
